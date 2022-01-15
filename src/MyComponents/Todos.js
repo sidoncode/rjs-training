@@ -6,7 +6,9 @@ export const Todos = (props) =>{
     return (
         <div className = "container">
              <h3>Todos List</h3>            
-             <TodosItem todo = {props.todos[0]}/>
+             {props.todos.map((todo) =>  {
+	            return <TodosItem todo  = {todo} ondelete = {props.ondelete}/>
+            })}
         
         </div>
     )

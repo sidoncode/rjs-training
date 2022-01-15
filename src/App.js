@@ -8,6 +8,15 @@ import {TodosItem} from './MyComponents/TodosItem';
 
 function App() {
 
+  const ondelete = ()=>{
+
+    console.log("delete btn clicked");
+
+  }
+
+
+
+
   let todos = [
 
     {
@@ -39,7 +48,7 @@ function App() {
         <Header title = {12} searchbar = {false}></Header>
         { /* <Todos> todos = {todos}</Todos> */ }
 
-        <Todos todos = {todos}/>
+        <Todos todos = {todos} ondelete = {ondelete}/>
 
 
 
