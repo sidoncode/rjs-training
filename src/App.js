@@ -8,9 +8,14 @@ import {TodosItem} from './MyComponents/TodosItem';
 
 function App() {
 
-  const ondelete = ()=>{
+  const ondelete = (todo)=>{
 
-    console.log("delete btn clicked");
+    console.log("delete btn clicked of todo", todo);
+
+
+    // In react this method of deleting things wont work  -- incase of this we need to use the Use State Hook
+    //let index = todos.indexOf(todo);
+    //todos.indexOf(index,1);
 
   }
 

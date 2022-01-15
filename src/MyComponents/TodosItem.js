@@ -9,7 +9,7 @@ export const  TodosItem = ({todo,ondelete}) => {
 
             <h4>{todo.title}</h4>
             <p>{todo.desc}</p>
-            <button onClick = {ondelete}> Delete </button>
+            <button className="btn btn-sm btn-danger" onClick={()=>{ondelete(todo)}}>Delete</button> 
             
         </div>
     
